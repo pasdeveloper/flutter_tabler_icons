@@ -1,39 +1,60 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# tabler_icons
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/tools/pub/writing-package-pages).
+A Flutter package for [Tabler Icons](https://tabler-icons.io/).
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/to/develop-packages).
--->
+Tabler Icons is a set of over 5000+ free-to-use, open-source icons. This package provides icons from **Tabler version 3.36.0** as `IconData` for Flutter, including both the **Outline** and **Filled** variants.
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+All icons are defined as `static const`, making them fully tree-shakeable so that only the icons you actually use are included in your application's build.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Add `tabler_icons` to your `pubspec.yaml` dependencies:
+
+```yaml
+dependencies:
+  tabler_icons: ^3.36.0
+```
+
+Then run:
+
+```bash
+flutter pub get
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package:
 
 ```dart
-const like = 'sample';
+import 'package:tabler_icons/tabler_icons.dart';
 ```
+
+Use the icons in your widgets:
+
+```dart
+// Outline icon
+Icon(TablerIcons.heart)
+
+// Filled icon
+Icon(TablerIcons.heart_filled)
+
+// Customizing
+Icon(
+  TablerIcons.brand_github,
+  color: Colors.black,
+  size: 32.0,
+)
+```
+
+## Icon Naming
+
+Icon names are converted from Tabler's kebab-case to snake_case.
+
+- `activity` -> `TablerIcons.activity`
+- `brand-github` -> `TablerIcons.brand_github`
+- `123` -> `TablerIcons.icon_123` (Prefixed with `icon_` if it starts with a digit)
+- `filled` variant -> `TablerIcons.heart_filled` (Suffixed with `_filled`)
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+For a full list of icons, visit [tabler-icons.io](https://tabler-icons.io/).
