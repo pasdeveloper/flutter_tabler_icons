@@ -1,0 +1,30 @@
+name: tabler_icons
+description: "A new Flutter package project."
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ^3.10.4
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  fonts:
+    - family: tabler-icons
+      fonts:
+        - asset: assets/fonts/tabler-icons.ttf
+    - family: tabler-icons-filled
+      fonts:
+        - asset: assets/fonts/tabler-icons-filled.ttf
