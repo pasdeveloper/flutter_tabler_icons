@@ -1,4 +1,4 @@
-# tabler_icons
+# flutter_pas_tabler_icons
 
 A Flutter package for [Tabler Icons](https://tabler-icons.io/).
 
@@ -8,11 +8,11 @@ All icons are defined as `static const`, making them fully tree-shakeable so tha
 
 ## Getting started
 
-Add `tabler_icons` to your `pubspec.yaml` dependencies:
+Add `flutter_pas_tabler_icons` to your `pubspec.yaml` dependencies:
 
 ```yaml
 dependencies:
-  tabler_icons: ^3.36.0
+  flutter_pas_tabler_icons: ^3.36.0
 ```
 
 Then run:
@@ -26,7 +26,7 @@ flutter pub get
 Import the package:
 
 ```dart
-import 'package:tabler_icons/tabler_icons.dart';
+import 'package:flutter_pas_tabler_icons/flutter_pas_tabler_icons.dart';
 ```
 
 Use the icons in your widgets:

@@ -1,3 +1,5 @@
-## 0.0.1
+## 3.36.0
 
-* TODO: Describe initial release.
+* Initial release with Tabler Icons v3.36.0.
+* Includes 5000+ icons in both Outline and Filled variants.
+* Fully tree-shakeable IconData.

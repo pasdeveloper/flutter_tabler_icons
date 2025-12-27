@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tabler_icons/tabler_icons.dart';
+import 'package:flutter_pas_tabler_icons/flutter_pas_tabler_icons.dart';
 
 void main() {
   test('TablerIcons class exists and has icons', () {

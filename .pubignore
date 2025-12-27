@@ -1,0 +1,8 @@
+# File da escludere dalla pubblicazione su pub.dev
+tool/
+assets/css/
+.idea/
+.vscode/
+.dart_tool/
+build/
+*.log
